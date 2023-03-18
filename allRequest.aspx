@@ -1,11 +1,11 @@
-<%@ Assembly Name="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>
+<%@ Assembly Name="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken="%>
 <%@ Page Language="C#" Inherits="Microsoft.SharePoint.WebPartPages.WikiEditPage" MasterPageFile="~masterurl/default.master"      MainContentID="PlaceHolderMain" %>
 <%@ Import Namespace="Microsoft.SharePoint.WebPartPages" %>
-<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken= %>
+<%@ Register Tagprefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken= %>
 <%@ Import Namespace="Microsoft.SharePoint" %>
-<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
-<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken= %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=" %>
 <asp:Content ContentPlaceHolderId="PlaceHolderPageTitle" runat="server">
 	<SharePoint:ProjectProperty Property="Title" runat="server" /> - Serviços
 </asp:Content>
@@ -19,31 +19,24 @@
 		var navBarHelpOverrideKey = "WSSEndUser";
 	</SharePoint:ScriptBlock>
 
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/jquery-ui.min.css"/>
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/bootstrap4.0.min.css"/>
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/font-awesome.min.css"/>
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/layout3.0.css"/>
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/bird-alert.css">
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/MDB-Free/css/mdb.min.css">
-	<link rel="stylesheet" type="text/css" href="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/css/datatables.min.css">
 	<link rel="stylesheet" type="text/css" href="../SiteAssets/css/allRequests.css"/>
 
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/jquery-3.2.1.slim.min.js.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/jquery.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/popper.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/bootstrap4.0.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/weg-tools.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/mask.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/weg-headerBar.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/bootbox.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/bootstrap-filestyle.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/bird-alert.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/moment.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/momentjs-business.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/datatables.min.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/require.js"></script>
-	<script type="text/javascript" src="https://intranet.weg.net/br/SiteAssets/js/vendor/schererr/js/loader.js"></script>
+	<script type="text/javascript" src="/js/jquery-3.2.1.slim.min.js.js"></script>
+	<script type="text/javascript" src="/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/js/popper.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap4.0.min.js"></script>
+	<script type="text/javascript" src="/js/tools.js"></script>
+	<script type="text/javascript" src="/js/mask.js"></script>
+
+	<script type="text/javascript" src="/js/bootbox.min.js"></script>
+	<script type="text/javascript" src="/js/bootstrap-filestyle.min.js"></script>
+	<script type="text/javascript" src="/js/bird-alert.min.js"></script>
+	<script type="text/javascript" src="/js/moment.min.js"></script>
+	<script type="text/javascript" src="/js/momentjs-business.js"></script>
+	<script type="text/javascript" src="/js/datatables.min.js"></script>
+	<script type="text/javascript" src="/js/require.js"></script>
+	<script type="text/javascript" src="/js/loader.js"></script>
 	<script type="text/javascript" src="../SiteAssets/js/allRequests.js"></script>
 
 	<script type="text/javascript">
