@@ -1,5 +1,5 @@
 SiteUser;
-SiteRequests="https://intranet.weg.net/br/corporativo/logistica/importacao/SitePages/newRequest.aspx?GUID=";
+SiteRequests="/newRequest.aspx?GUID=";
 
 function LoadRequests(filter){
     LoadCurrentUser();
